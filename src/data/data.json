@@ -1,0 +1,186 @@
+{
+    "personal": {
+        "name": "Malick",
+        "title": "Développeur Full Stack",
+        "subtitle": "Je construis des expériences web modernes et élégantes",
+        "bio": "Développeur Full Stack passionné par le développement web, les métiers de la data et les Large Language Models (LLM). Je crée des applications performantes et esthétiques, toujours curieux d'explorer de nouvelles technologies.",
+        "avatar": "/image.png",
+        "resume": "#"
+    },
+    "skills": [
+        {
+            "name": "JavaScript",
+            "level": "Expert",
+            "icon": "📜",
+            "domain": "Frontend"
+        },
+        {
+            "name": "React",
+            "level": "Avancé",
+            "icon": "⚛️",
+            "domain": "Frontend"
+        },
+        {
+            "name": "CSS / Design",
+            "level": "Avancé",
+            "icon": "🎨",
+            "domain": "Frontend"
+        },
+        {
+            "name": "Bootstrap",
+            "level": "Avancé",
+            "icon": "🎨",
+            "domain": "Frontend"
+        },
+        {
+            "name": "Tailwind",
+            "level": "Avancé",
+            "icon": "🎨",
+            "domain": "Frontend"
+        },
+        {
+            "name": "Dart / Flutter",
+            "level": "Intermédiaire",
+            "icon": "🦋",
+            "domain": "Frontend"
+        },
+        {
+            "name": "Java",
+            "level": "Avancé",
+            "icon": "☕",
+            "domain": "Backend"
+        },
+        {
+            "name": "Python / Django",
+            "level": "Avancé",
+            "icon": "🐍",
+            "domain": "Backend"
+        },
+        {
+            "name": "Python / FastAPI",
+            "level": "Avancé",
+            "icon": "🚀",
+            "domain": "Backend"
+        },
+        {
+            "name": "Laravel / PHP",
+            "level": "Avancé",
+            "icon": "🐘",
+            "domain": "Backend"
+        },
+        {
+            "name": "MySQL",
+            "level": "Avancé",
+            "icon": "🗄️",
+            "domain": "Data"
+        },
+        {
+            "name": "PostgreSQL",
+            "level": "Avancé",
+            "icon": "🐘",
+            "domain": "Data"
+        },
+        {
+            "name": "LLM / Gemini AI",
+            "level": "Intermédiaire",
+            "icon": "🤖",
+            "domain": "Data"
+        },
+        {
+            "name": "Git & GitHub",
+            "level": "Avancé",
+            "icon": "🔧",
+            "domain": "Outils"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Site Vitrine Cafétéria",
+            "description": "Site vitrine pour une cafétéria, permettant de présenter leurs activités et de mettre en avant les menus disponibles. Il intègre également un système de commande en ligne et une fiche de contact.",
+            "tags": [
+                "PHP",
+                "Bootstrap"
+            ],
+            "category": "Web",
+            "github": "https://github.com",
+            "demo": "#",
+            "featured": true,
+            "images": [
+                "projects/caf1.png",
+                "projects/caf2.png"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Student Manager",
+            "description": "Mini-application Laravel intitulée 'Student Manager', permettant de gérer des filières et des étudiants.",
+            "tags": [
+                "Laravel",
+                "Blade",
+                "PHP"
+            ],
+            "category": "Full Stack",
+            "github": "https://github.com",
+            "demo": "#",
+            "featured": true,
+            "images": []
+        },
+        {
+            "id": 3,
+            "title": "Blog Laravel",
+            "description": "Blog développé avec Laravel et Blade, conçu pour pratiquer l'architecture MVC, la gestion des articles et les vues dynamiques. Code propre, routes optimisées et structure évolutive pour un blog moderne et facile à maintenir.",
+            "tags": [
+                "Laravel",
+                "Blade",
+                "MVC"
+            ],
+            "category": "Full Stack",
+            "github": "https://github.com",
+            "demo": "#",
+            "featured": false,
+            "images": [
+                "projects/blog1.png",
+                "projects/blog2.png"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Application Météo",
+            "description": "Application météo dynamique développée avec React 19. Intégration de l'API OpenWeatherMap, gestion d'états asynchrones et interface adaptative avec changement de thème automatique selon les conditions climatiques.",
+            "tags": [
+                "React 19",
+                "OpenWeatherMap API",
+                "JavaScript"
+            ],
+            "category": "Frontend",
+            "github": "https://github.com",
+            "demo": "#",
+            "featured": true,
+            "images": []
+        },
+        {
+            "id": 5,
+            "title": "Simulation Feux de Circulation",
+            "description": "Projet académique de simulation graphique du trafic et des feux de circulation, développé en Python avec la bibliothèque Turtle. Modélisation des phases de signalisation (rouge, orange, vert) et du comportement des véhicules à une intersection.",
+            "tags": [
+                "Python",
+                "Turtle",
+                "Simulation"
+            ],
+            "category": "Python",
+            "github": "https://github.com",
+            "demo": "#",
+            "featured": false,
+            "images": [
+                "projects/feu1.png",
+                "projects/feu2.png"
+            ]
+        }
+    ],
+    "social": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "email": "malickthioub08@gmail.com"
+    }
+}
