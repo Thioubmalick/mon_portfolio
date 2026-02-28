@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import * as Icons from 'lucide-react';
 import data from '../data/data.json';
 
 const levelConfig = {
@@ -8,10 +9,10 @@ const levelConfig = {
 };
 
 const domainIcon = {
-    'Frontend': '🖥️',
-    'Backend': '⚙️',
-    'Data': '📊',
-    'Outils': '🔧',
+    'Frontend': <Icons.Monitor size={20} />,
+    'Backend': <Icons.Server size={20} />,
+    'Data': <Icons.Database size={20} />,
+    'Outils': <Icons.Wrench size={20} />,
 };
 
 const levels = ['Expert', 'Avancé', 'Intermédiaire'];
@@ -64,7 +65,7 @@ export default function Skills() {
                                 transition={{ duration: 0.5, delay: di * 0.1 }}
                             >
                                 <div className="domain-header">
-                                    <span className="domain-icon">{domainIcon[domain] || '💡'}</span>
+                                    <span className="domain-icon">{domainIcon[domain] || <Icons.Lightbulb size={20} />}</span>
                                     <h3 className="domain-name">{domain}</h3>
                                 </div>
                                 <div className="domain-chips">
@@ -86,7 +87,10 @@ export default function Skills() {
                                                 whileHover={{ scale: 1.06, y: -2 }}
                                                 title={skill.level}
                                             >
-                                                <span className="chip-icon">{skill.icon}</span>
+                                                {(() => {
+                                                    const IconComponent = Icons[skill.icon] || Icons.Code;
+                                                    return <IconComponent size={16} className="chip-icon" />;
+                                                })()}
                                                 <span className="chip-name">{skill.name}</span>
                                                 <span className="chip-level-dot" style={{ background: cfg.dot }} />
                                             </motion.div>
@@ -106,7 +110,7 @@ export default function Skills() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.5 }}
                 >
-                    <span className="learning-icon">🎯</span>
+                    <span className="learning-icon"><Icons.Target size={24} /></span>
                     <div>
                         <p className="learning-title">En apprentissage</p>
                         <p className="learning-desc">DeepLearning · RAG · Vector Databases · TypeScript</p>

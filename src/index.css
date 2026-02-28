@@ -259,10 +259,17 @@ body {
   display: none;
   flex-direction: column;
   gap: 5px;
-  background: none;
-  border: none;
+  background: var(--glass);
+  border: 1px solid var(--border);
   cursor: pointer;
-  padding: 4px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  transition: all 0.3s ease;
+}
+
+.burger:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent-cyan);
 }
 
 .burger span {
@@ -687,6 +694,17 @@ body {
   color: var(--text-primary);
 }
 
+.hi-badge {
+  background: rgba(124, 58, 237, 0.15);
+  color: var(--accent-violet);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
 .hi-desc {
   font-size: 0.75rem;
   color: var(--text-muted);
@@ -846,10 +864,11 @@ body {
 /* Project image */
 .project-img {
   position: relative;
-  width: 100%;
   aspect-ratio: 16/9;
   overflow: hidden;
   cursor: pointer;
+  margin: 0.8rem 0.8rem 0 0.8rem;
+  border-radius: calc(var(--radius) - 6px);
 }
 
 .project-img img {
@@ -895,7 +914,6 @@ body {
 
 /* Placeholder */
 .project-img-placeholder {
-  width: 100%;
   aspect-ratio: 16/9;
   display: flex;
   flex-direction: column;
@@ -903,7 +921,8 @@ body {
   justify-content: center;
   gap: 0.5rem;
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.06), rgba(0, 212, 255, 0.04));
-  border-bottom: 1px solid var(--border);
+  margin: 0.8rem 0.8rem 0 0.8rem;
+  border-radius: calc(var(--radius) - 6px);
 }
 
 .placeholder-icon {
@@ -1400,7 +1419,7 @@ body {
   color: var(--text-muted);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .container {
     padding: 0 1.2rem;

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Search, Image as ImageIcon } from 'lucide-react';
 import data from '../data/data.json';
 
 export default function Projects() {
@@ -67,11 +68,11 @@ export default function Projects() {
                                     {project.images.length > 1 && (
                                         <span className="img-count">+{project.images.length - 1} photos</span>
                                     )}
-                                    <div className="img-overlay">🔍 Voir les photos</div>
+                                    <div className="img-overlay"><Search size={16} style={{ marginRight: '6px' }} /> Voir les photos</div>
                                 </div>
                             ) : (
                                 <div className="project-img-placeholder">
-                                    <span className="placeholder-icon">🖼️</span>
+                                    <span className="placeholder-icon"><ImageIcon size={32} /></span>
                                     <span className="placeholder-text">Aucune photo</span>
                                 </div>
                             )}

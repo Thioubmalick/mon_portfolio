@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Atom, Database, FileCode, Bot } from 'lucide-react';
 import data from '../data/data.json';
 
 export default function Hero() {
@@ -138,10 +139,10 @@ export default function Hero() {
                             <p className="avatar-role">{title}</p>
                         </div>
                         {/* Floating tech pills */}
-                        <div className="tech-pill pill-1">React ⚛️</div>
-                        <div className="tech-pill pill-2">Laravel 🐘</div>
-                        <div className="tech-pill pill-3">Python 🐍</div>
-                        <div className="tech-pill pill-4">LLM 🤖</div>
+                        <div className="tech-pill pill-1"><Atom size={14} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px', paddingBottom: '2px' }} /> React</div>
+                        <div className="tech-pill pill-2"><Database size={14} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px', paddingBottom: '2px' }} /> Laravel</div>
+                        <div className="tech-pill pill-3"><FileCode size={14} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px', paddingBottom: '2px' }} /> Python</div>
+                        <div className="tech-pill pill-4"><Bot size={14} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px', paddingBottom: '2px' }} /> LLM</div>
                     </div>
                 </motion.div>
             </div>

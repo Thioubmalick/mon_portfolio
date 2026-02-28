@@ -103,7 +103,7 @@
                 "Bootstrap"
             ],
             "category": "Web",
-            "github": "https://github.com",
+            "github": "https://github.com/Thioubmalick/Caf-t-ria",
             "demo": "#",
             "featured": true,
             "images": [
@@ -121,7 +121,7 @@
                 "PHP"
             ],
             "category": "Full Stack",
-            "github": "https://github.com",
+            "github": "https://github.com/Thioubmalick/Student-manager",
             "demo": "#",
             "featured": true,
             "images": []
@@ -136,7 +136,7 @@
                 "MVC"
             ],
             "category": "Full Stack",
-            "github": "https://github.com",
+            "github": "https://github.com/Thioubmalick/BlogArticle",
             "demo": "#",
             "featured": false,
             "images": [
@@ -154,7 +154,7 @@
                 "JavaScript"
             ],
             "category": "Frontend",
-            "github": "https://github.com",
+            "github": "https://github.com/Thioubmalick/ReactWeather_app",
             "demo": "#",
             "featured": true,
             "images": []
@@ -169,7 +169,7 @@
                 "Simulation"
             ],
             "category": "Python",
-            "github": "https://github.com",
+            "github": "https://github.com/Thioubmalick/simulation_de_feu_tricolore",
             "demo": "#",
             "featured": false,
             "images": [

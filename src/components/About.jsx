@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
+import { Globe, BarChart, Bot, GraduationCap, Camera, Hand } from 'lucide-react';
 import data from '../data/data.json';
 
 const highlights = [
-    { icon: '🌐', label: 'Développement Web', desc: 'Applications full stack modernes' },
-    { icon: '📊', label: 'Data & Analytics', desc: 'Traitement et visualisation de données' },
-    { icon: '🤖', label: 'IA & LLM', desc: 'Intégration de modèles de langage' },
-    { icon: '🎓', label: 'Apprentissage continu', desc: 'Toujours en veille technologique' },
+    { icon: <Globe size={24} />, label: 'Développement Web', desc: 'Applications full stack modernes' },
+    { icon: <BarChart size={24} />, label: 'Data & Analytics', desc: 'Fort intérêt pour le traitement de données', badge: 'En apprentissage' },
+    { icon: <Bot size={24} />, label: 'IA & LLM', desc: 'Passionné par l\'intégration de modèles d\'IA', badge: 'En apprentissage' },
+    { icon: <GraduationCap size={24} />, label: 'Apprentissage continu', desc: 'Toujours en veille technologique' },
 ];
 
 export default function About() {
@@ -40,7 +41,7 @@ export default function About() {
                             ) : (
                                 <div className="about-photo-placeholder">
                                     <span className="about-initials">{name.charAt(0)}</span>
-                                    <p className="photo-hint">📸 Photo à venir</p>
+                                    <p className="photo-hint"><Camera size={14} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px', paddingBottom: '2px' }} /> Photo à venir</p>
                                 </div>
                             )}
                             <div className="about-photo-glow" />
@@ -55,7 +56,7 @@ export default function About() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.1 }}
                     >
-                        <h3 className="about-name">{name} <span className="wave">👋</span></h3>
+                        <h3 className="about-name">{name} <span className="wave"><Hand size={26} style={{ display: 'inline-block', verticalAlign: 'middle', paddingBottom: '4px' }} /></span></h3>
                         <p className="about-bio">{bio}</p>
 
                         <div className="about-highlights">
@@ -70,8 +71,11 @@ export default function About() {
                                 >
                                     <span className="hi-icon">{h.icon}</span>
                                     <div>
-                                        <p className="hi-label">{h.label}</p>
-                                        <p className="hi-desc">{h.desc}</p>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                                            <p className="hi-label" style={{ margin: 0 }}>{h.label}</p>
+                                            {h.badge && <span className="hi-badge">{h.badge}</span>}
+                                        </div>
+                                        <p className="hi-desc" style={{ marginTop: '4px' }}>{h.desc}</p>
                                     </div>
                                 </motion.div>
                             ))}

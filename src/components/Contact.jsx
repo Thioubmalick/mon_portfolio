@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { MessageSquare, Mail, Github, Linkedin, CheckCircle } from 'lucide-react';
 import data from '../data/data.json';
 
 export default function Contact() {
@@ -41,7 +42,7 @@ export default function Contact() {
                         transition={{ duration: 0.7 }}
                     >
                         <div className="contact-card glass-card">
-                            <h3 className="contact-card-title">Parlons de ton projet 💬</h3>
+                            <h3 className="contact-card-title"><MessageSquare size={20} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '6px', paddingBottom: '2px' }} /> Parlons de ton projet</h3>
                             <p className="contact-card-text">
                                 Je suis disponible pour des missions freelance, des stages ou des opportunités full-time.
                                 N'hésite pas à me contacter !
@@ -50,19 +51,19 @@ export default function Contact() {
                             <div className="contact-links">
                                 {data.social.email && (
                                     <a href={`mailto:${data.social.email}`} className="contact-link">
-                                        <span className="cl-icon">✉️</span>
+                                        <span className="cl-icon"><Mail size={18} /></span>
                                         <span>{data.social.email}</span>
                                     </a>
                                 )}
                                 {data.social.github && (
                                     <a href={data.social.github} target="_blank" rel="noreferrer" className="contact-link">
-                                        <span className="cl-icon">🐙</span>
+                                        <span className="cl-icon"><Github size={18} /></span>
                                         <span>GitHub</span>
                                     </a>
                                 )}
                                 {data.social.linkedin && (
                                     <a href={data.social.linkedin} target="_blank" rel="noreferrer" className="contact-link">
-                                        <span className="cl-icon">💼</span>
+                                        <span className="cl-icon"><Linkedin size={18} /></span>
                                         <span>LinkedIn</span>
                                     </a>
                                 )}
@@ -116,7 +117,7 @@ export default function Contact() {
                             />
                         </div>
                         <button type="submit" className="btn btn-primary form-btn">
-                            {sent ? '✅ Message envoyé !' : 'Envoyer le message →'}
+                            {sent ? <><CheckCircle size={18} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '6px', paddingBottom: '2px' }} /> Message envoyé !</> : 'Envoyer le message →'}
                         </button>
                     </motion.form>
                 </div>
